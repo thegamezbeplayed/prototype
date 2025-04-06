@@ -1,0 +1,61 @@
+palette.png
+size: 7, 8
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+blues
+  rotate: false
+  xy: 0, 0
+  size: 7, 1
+  orig: 7, 1
+  offset: 0, 0
+  index: -1
+greens
+  rotate: false
+  xy: 0, 1
+  size: 7, 1
+  orig: 7, 1
+  offset: 0, 0
+  index: -1
+lgreens
+  rotate: false
+  xy: 0, 2
+  size: 7, 1
+  orig: 7, 1
+  offset: 0, 0
+  index: -1
+navys
+  rotate: false
+  xy: 0, 3
+  size: 7, 1
+  orig: 7, 1
+  offset: 0, 0
+  index: -1
+pinks
+  rotate: false
+  xy: 0, 4
+  size: 7, 1
+  orig: 7, 1
+  offset: 0, 0
+  index: -1
+purples
+  rotate: false
+  xy: 0, 5
+  size: 7, 1
+  orig: 7, 1
+  offset: 0, 0
+  index: -1
+reds
+  rotate: false
+  xy: 0, 6
+  size: 7, 1
+  orig: 7, 1
+  offset: 0, 0
+  index: -1
+violets
+  rotate: false
+  xy: 0, 7
+  size: 7, 1
+  orig: 7, 1
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,6 @@
+_base.hxml
+-D windowSize=1920x1080
+-hl bin/client.hl
+-lib hlsdl
+-lib hlsteam
+-lib hlopenal
