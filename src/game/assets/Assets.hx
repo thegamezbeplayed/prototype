@@ -93,74 +93,7 @@ class Assets {
 
     // LDtk init & parsing
     worldData = new World();
-    
-    music.set('intro0',S._music.title_intro());
-
-    music.set('levelDemo0',S._music.level_intro());
-    music.set('levelDemo1',S._music.level_loop_01());
-    music.set('levelIntro0',S._music.tut_intro());
-    music.set('levelIntro1',S._music.tut_loop_01());
-    music.set('levelIntro2',S._music.tut_loop_02());
-    music.set('levelVoid0',S._music.void_intro());
-    music.set('levelVoid1',S._music.void_loop_01());
-    music.set('levelVoid2',S._music.void_loop_02());
-
-    uiSfx.set('click1',S.back_001());    
-    uiSfx.set('click2',S.back_002());
-    uiSfx.set('click3',S.back_003());
-    uiSfx.set('options4',S.back_004());
-    uiSfx.set('options1',S.click_001());
-    uiSfx.set('options2',S.click_002());
-    uiSfx.set('options3',S.click_003());
-    uiSfx.set('options4',S.click_004());
-    uiSfx.set('options5',S.click_005());
-
-    actionSfx1.set('shoot1',S.close_001());
-    actionSfx1.set('shoot2',S.close_002());
-    actionSfx1.set('shoot3',S.close_003());
-    actionSfx1.set('shoot4',S.close_004());
-    actionSfx1.set('drop1',S.drop_001());
-    actionSfx1.set('drop2',S.drop_002());
-    actionSfx1.set('drop3',S.drop_003());
-    actionSfx1.set('drop4',S.drop_004());
-    
-    actionSfx2.set('hit1',S.glitch_001());
-    actionSfx2.set('hit2',S.glitch_002());
-    actionSfx2.set('hit3',S.glitch_003());
-    actionSfx2.set('hit4',S.glitch_004());
-    
-    actionSfx2.set('combo1',S.combo_001());
-    actionSfx2.set('combo2',S.combo_002());
-    actionSfx2.set('combo3',S.combo_003());
-    actionSfx2.set('combo4',S.combo_004());
-    actionSfx2.set('combo5',S.combo_005());
-    
-    actionSfx2.set('reflect1',S.error_001());
-    actionSfx2.set('reflect2',S.error_002());
-    actionSfx2.set('reflect3',S.error_003());
-    actionSfx2.set('reflect4',S.error_004());
-    actionSfx3.set('boom1',S.boom_001());
-    actionSfx3.set('boom2',S.boom_002());
-    actionSfx3.set('boom3',S.boom_003());
-    actionSfx3.set('warp1',S.confirmation_001());
-    actionSfx3.set('warp2',S.confirmation_002());
-    actionSfx3.set('warp3',S.confirmation_003());
-    actionSfx3.set('warp4',S.confirmation_004());
-    
-    groups.set(Const.SG_FX0,actionSfx0);
-    groups.set(Const.SG_FX1,actionSfx1);
-    groups.set(Const.SG_FX2,actionSfx2);
-    groups.set(Const.SG_FX3,actionSfx3);
-    
-    groups.set(Const.SG_UI,uiSfx);
-    groups.set(Const.SG_MUSIC,music);
-
-
-    for (i in 0...6){
-      for(s in groups.get(i))
-	s.groupId = i;
-    }
-    // LDtk file hot-reloading
+   // LDtk file hot-reloading
     #if debug
     var res = try hxd.Res.load(worldData.projectFilePath.substr(4)) catch(_) null; // assume the LDtk file is in "res/" subfolder
     if( res!=null )
